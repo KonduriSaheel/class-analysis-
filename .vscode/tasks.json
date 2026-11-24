@@ -1,0 +1,209 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install dependencies",
+			"type": "shell",
+			"command": "npm install",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Build ClassSight",
+			"type": "shell",
+			"command": "npm run build",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Lint ClassSight",
+			"type": "shell",
+			"command": "npm run lint",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Run ClassSight",
+			"type": "shell",
+			"command": "npm run dev",
+			"args": [],
+			"isBackground": true,
+			"problemMatcher": [],
+			"group": "build"
+		},
+		{
+			"label": "Start ClassSight AI",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"dev"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build ClassSight AI",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "Build Fixed ClassSight AI",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build"
+			],
+			"isBackground": false,
+			"problemMatcher": [
+				"$tsc"
+			]
+		},
+		{
+			"label": "Check Git Remote",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"remote",
+				"-v"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Git Repository",
+			"type": "shell",
+			"command": "git",
+			"args": [
+				"status",
+				"--short",
+				"--branch"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Locate Git",
+			"type": "shell",
+			"command": "C:\\Windows\\System32\\where.exe",
+			"args": [
+				"git"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check Package Manager",
+			"type": "shell",
+			"command": "C:\\Windows\\System32\\where.exe",
+			"args": [
+				"winget"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Install Git for Windows",
+			"type": "shell",
+			"command": "winget",
+			"args": [
+				"install",
+				"--id",
+				"Git.Git",
+				"-e",
+				"--accept-package-agreements",
+				"--accept-source-agreements",
+				"--disable-interactivity"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Initialize and Push Repository",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"-C",
+				"C:\\Users\\HP\\Downloads\\classsight-ai",
+				"status",
+				"--short",
+				"--branch"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Initialize Git and Remote",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"-C",
+				"C:\\Users\\HP\\Downloads\\classsight-ai",
+				"init",
+				"-b",
+				"main"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Add GitHub Remote",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"-C",
+				"C:\\Users\\HP\\Downloads\\classsight-ai",
+				"remote",
+				"add",
+				"origin",
+				"https://github.com/KonduriSaheel/class-analysis-.git"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Stage and Commit Files",
+			"type": "shell",
+			"command": "C:\\Windows\\System32\\cmd.exe",
+			"args": [
+				"/d",
+				"/c",
+				"\"C:\\Program Files\\Git\\cmd\\git.exe\" -C C:\\Users\\HP\\Downloads\\classsight-ai add -A & \"C:\\Program Files\\Git\\cmd\\git.exe\" -C C:\\Users\\HP\\Downloads\\classsight-ai commit -m \"Initial commit: ClassSight AI\" -m \"Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>\""
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Stage All Files",
+			"type": "shell",
+			"command": "C:\\Program Files\\Git\\cmd\\git.exe",
+			"args": [
+				"-C",
+				"C:\\Users\\HP\\Downloads\\classsight-ai",
+				"add",
+				"-A"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

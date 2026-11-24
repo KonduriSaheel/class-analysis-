@@ -1,0 +1,6 @@
+{
+  "name": "ClassSight AI",
+  "description": "Privacy-preserving classroom engagement analytics with local face anonymisation, pose estimation, temporal engagement classification, seating heatmaps, and evaluation reports.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
